@@ -9,9 +9,6 @@ body {
     background: white;
     font-family: 'Lato-Regular';
     margin: 0;
-    &.blur {
-        filter: blur(2.5px);
-    }
 }
 @media (min-width: 768px) {
     .container {
@@ -152,7 +149,6 @@ $whiteBgColor: #ffffff;
     background-size: cover;
     height: auto;
     padding: 97px 0 202px;
-    filter: blur(0px);
     transition: all .25s;
     &.blur {
         filter: blur(5px);
@@ -468,7 +464,6 @@ $whiteBgColor: #ffffff;
     background-size: cover;
     height: auto;
     padding: 120px 0 150px;
-    filter: blur(0px);
     transition: all .25s;
     &.blur {
         filter: blur(5px);
@@ -1043,7 +1038,6 @@ $whiteBgColor: #ffffff;
 .footer {
     background: #3D4050;
     padding: 25px 0;
-    filter: blur(0px);
     transition: all .25s;
     &.blur {
         filter: blur(5px);
