@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/ico">
+        <title>Тестовое задание - бизнес</title>
+
+    </head>
+    <body>    
+        <section class="nav">
+            <div class="container">
+                <div class="nav__content">
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <span>LoremIpsum.</span>
+                            <span class="nav_cBlue">net</span>
+                        </a>
+                    </div>
+                    <div id="burger" class="nav__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <nav id="navMenu" class="nav__menu">
+                        <div id="navClose" class="nav__close">
+                            <img src="/src/assets/images/close.svg" alt="Закрыть" />
+                        </div>
+                        <ul>
+                            <li>
+                                <a class="nav__link" href="business.html">Бизнес</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="about-us.html">О нас</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="prices.html">Цены</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="place-an-order.html">Оформить заказ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="navDarkBg" class="nav__darkBg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page">
+            <div class="container">
+                <h1>Бизнес</h1>
+            </div>
+        </section>
+        
+        
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__elem">
+                            © <span id="currentYear"></span> «LoremIpsum.net» Все права защищены.
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://oplata.qiwi.com/form?invoiceUid=7777" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/qiwi.svg" alt="Qiwi wallet" />
+                            </span>
+                            <span class="footer__name">Qiwi wallet</span>
+                        </a>
+                        <a href="https://yoomoney.ru/to/777777777777777" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/yandexMoney.svg" alt="Yandex Money" />
+                            </span>
+                            <span class="footer__name">Yandex Money</span>
+                        </a>
+                        <a id='wm-widget' class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/webMoney.svg" alt="Web Money" />
+                            </span>
+                            <span class="footer__name">Web Money</span>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="mailto:info@ipsum228.com" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/mail.svg" alt="Почта" />
+                            </span>
+                            <span class="footer__name">info@ipsum228.com</span>
+                        </a>
+                        <a href="https://vk.com/" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/vk.svg" alt="Мы вконтакте" />
+                            </span>
+                            <span class="footer__name">Мы вконтакте</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type='text/javascript' src='https://merchant.webmoney.ru/conf/lib/widgets/wmApp.js?v=1.6'></script>
+        <script type='text/javascript'>
+            window.webmoney.widgets().button.create(
+                {
+                    "data": {
+                        "amount": 1000,
+                        "purse": "Z777777777777",
+                        "desc": "Тестовый товар",
+                        "paymentType": "wm",
+                        "forcePay": true
+                    },
+                    "style": {
+                        "theme": "wm",
+                        "showAmount": true,
+                        "titleNum": 1,
+                        "title": "",
+                        "design": "skeuomorph"
+                    },
+                    "lang": "ru"
+                }
+            ).on(
+                'paymentComplete',
+                function (data) {
+                    /* your code */
+                }
+            ).mount('wm-widget')
+        </script>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/ico">
+        <title>Тестовое задание - главная страница</title>
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="modalWindowOfThanks" class="modalWindowOfThanks">
+            <div class="modalWindowOfThanks__blackFon modalClose"></div>
+            <div class="modalWindowOfThanks_center">
+                <div class="modalWindowOfThanks__content">
+                    <a class="crossElement modalClose">
+                        <img src="./assets/images/close.svg" alt="Закрыть" />
+                    </a>
+                    <div class="responseText"></div>
+                </div>
+            </div>
+        </div>
+        
+        <header class="header">
+            <section id="nav" class="nav">
+                <div class="container">
+                    <div class="nav__content">
+                        <div class="nav__logo">
+                            <a href="index.html">
+                                <span>LoremIpsum.</span>
+                                <span class="nav_cBlue">net</span>
+                            </a>
+                        </div>
+                        <div id="burger" class="nav__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+    
+                        <nav id="navMenu" class="nav__menu">
+                            <div id="navClose" class="nav__close">
+                                <img src="./assets/images/close.svg" alt="Закрыть" />
+                            </div>
+                            <ul>
+                                <li>
+                                    <a class="nav__link" href="business.html">Бизнес</a>
+                                </li>
+                                <li>
+                                    <a class="nav__link" href="about-us.html">О нас</a>
+                                </li>
+                                <li>
+                                    <a class="nav__link" href="prices.html">Цены</a>
+                                </li>
+                                <li>
+                                    <a class="nav__link" href="place-an-order.html">Оформить заказ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id="navDarkBg" class="nav__darkBg"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="header__title">
+                    <h1><span class="header_cBlue">Lorem ipsum</span> dolor sit <span class="header_dsBlock">amet consectetur <span class="header_cBlue">adipiscing</span></span></h1>
+                </div>
+                <div class="header__content">
+                    <div class="header__content_bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+                    <ul>
+                        <li>Totam rem aperiam eaque ipsa</li>
+                        <li>Sit voluptatem accusantium doloremque laudantium</li>
+                        <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="header__buttons">
+                    <a href="#">Заказать</a>
+                    <a href="#" class="buttonReadMore">Подробнее</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="makingAnOrder">
+            <div class="container">
+                <div class="makingAnOrder__content">
+                    <div class="makingAnOrder__title">Оформление <span class="makingAnOrder_cBlue">заказа</span></div>
+                    <div class="makingAnOrder__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+                    <div class="makingAnOrder__schemeBlock">
+                        <div class="makingAnOrder__scheme">
+                            <div class="schemeElem">
+                                <div class="schemeElem__icon">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="schemeElem__icon_verCenter">
+                                        <img src="./assets/images/makingAnOrder/search.svg" alt="Поиск" />
+                                    </div>
+                                </div>
+                                <div class="schemeElem__name">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="schemeElem">
+                                <div class="schemeElem__icon">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="schemeElem__icon_verCenter">
+                                        <img src="./assets/images/makingAnOrder/percent.svg" alt="Процент" />
+                                    </div>
+                                </div>
+                                <div class="schemeElem__name">Сonsecteturadipiscing elit</div>
+                            </div>
+                            <div class="schemeElem">
+                                <div class="schemeElem__icon">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="schemeElem__icon_verCenter">
+                                        <img src="./assets/images/makingAnOrder/subtract.svg" alt="Вычитать" />
+                                    </div>
+                                </div>
+                                <div class="schemeElem__name">Sed do eiusmod tempor</div>
+                            </div>
+                            <div class="schemeElem">
+                                <div class="schemeElem__icon">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="schemeElem__icon_verCenter">
+                                        <img src="./assets/images/makingAnOrder/message.svg" alt="Сообщение" />
+                                    </div>
+                                </div>
+                                <div class="schemeElem__name">Esse cillum dolore eu fugiat</div>
+                            </div>
+                            <div class="schemeElem">
+                                <div class="schemeElem__icon">
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="schemeElem__icon_verCenter">
+                                        <img src="./assets/images/makingAnOrder/payment.svg" alt="Оплатить" />
+                                    </div>
+                                </div>
+                                <div class="schemeElem__name">Excepteur sint occaecat cupidatat non proident</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" id="mainForm" class="mainForm"> <!--  method="post" enctype="multipart/form-data" -->
+                    <div class="mainForm__top">
+                        <div class="row">
+                            <div class="mainForm__item">
+                                <label class="mainForm__select">
+                                    <div class="mainForm__text">Выберите тип системы</div>
+                                    <select id="mainFormSelect" name="mainFormSelect" class="mainFormSelect mainForm_required select">
+                                        <option disabled>Выберите тип системы</option>
+                                        <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                        <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                        <option value="Et harum quidem">Et harum quidem</option>
+                                        <option value="Temporibus autem">Temporibus autem</option>
+                                        <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                        <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                        <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                        <option value="Et harum quidem">Et harum quidem</option>
+                                        <option value="Temporibus autem">Temporibus autem</option>
+                                        <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                        <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                        <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                        <option value="Et harum quidem">Et harum quidem</option>
+                                        <option value="Temporibus autem">Temporibus autem</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="mainForm__item">
+                                <label for="mainFormEmail" class="mainForm__email">
+                                    <input 
+                                        id="mainFormEmail"
+                                        type="text"
+                                        name="email"
+                                        placeholder=""
+                                        data-validate=""
+                                        readonly=""
+                                        onfocus="this.removeAttribute('readonly')"
+                                        required="true"
+                                        class="mainForm_required mainForm__emailInput"
+                                    >
+                                    <div class="mainForm__text">Ваш e-mail</div>
+                                </label>
+                            </div>
+                            <div class="mainForm__item">
+                                <label for="mainFormName" class="mainForm__name">
+                                    <input
+                                        id="mainFormName"
+                                        type="text"
+                                        name="name"
+                                        placeholder=""
+                                        data-validate=""
+                                        readonly=""
+                                        onfocus="this.removeAttribute('readonly')"
+                                        required="true"
+                                        class="mainForm_required"
+                                    />
+                                    <div class="mainForm__text">Ваше имя</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mainForm__bottom">
+                        <div class="row">
+                            <div class="mainForm__item">
+                                <div id='rangeWrap' class='mainForm__range'>
+                                    <label id='rangeLabel' class='mainForm__rangeLabel'>Sed ut perspiciatis, unde omnis iste natus</label>
+                                    <label id='output' name='value' class='mainForm__rangeOutput' for='range'></label>
+                                    <input 
+                                        id='range' 
+                                        type='range' 
+                                        name="range" 
+                                        class='mainForm__rangeInput' 
+                                        min='0' 
+                                        max='100' 
+                                    />
+                                </div>
+                            </div>
+                            <div class="mainForm__item">
+                                <div class="myfile">
+                                    <label for="uploadedFile" class="myfile__label">Прикрепить файл</label>
+                                    <input type="file" class="myfile__input" id="uploadedFile" name="uploadedFile" multiple="multiple" /> <!--  name="uploadedFile[]"  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="myFilePreview" class="myfile__previewBlock"></div>
+
+                    <div id="mainFormInfoFile" class="mainForm__info"></div>
+                    <div id="mainFormInfoOk" class="mainForm__infoOk"></div>
+                    <div id="mainFormInfo" class="mainForm__info"></div>
+
+                    <div class="mainForm__submitBlock">
+                        <button type="submit" class="mainForm__submit form__bottom">Отправить</button>
+                    </div>
+        
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <div class="footer__elem">
+                            © <span id="currentYear"></span> «LoremIpsum.net» Все права защищены.
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a href="https://oplata.qiwi.com/form?invoiceUid=7777" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/qiwi.svg" alt="Qiwi wallet" />
+                            </span>
+                            <span class="footer__name">Qiwi wallet</span>
+                        </a>
+                        <a href="https://yoomoney.ru/to/777777777777777" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/yandexMoney.svg" alt="Yandex Money" />
+                            </span>
+                            <span class="footer__name">Yandex Money</span>
+                        </a>
+                        <a id='wm-widget' class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/webMoney.svg" alt="Web Money" />
+                            </span>
+                            <span class="footer__name">Web Money</span>
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="mailto:info@ipsum228.com" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/mail.svg" alt="Почта" />
+                            </span>
+                            <span class="footer__name">info@ipsum228.com</span>
+                        </a>
+                        <a href="https://vk.com/" target="_blank" class="footer__elem">
+                            <span class="footer__image">
+                                <img src="./assets/images/footer/vk.svg" alt="Мы вконтакте" />
+                            </span>
+                            <span class="footer__name">Мы вконтакте</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type='text/javascript' src='https://merchant.webmoney.ru/conf/lib/widgets/wmApp.js?v=1.6'></script>
+        <script type='text/javascript'>
+            window.webmoney.widgets().button.create(
+                {
+                    "data": {
+                        "amount": 1000,
+                        "purse": "Z777777777777",
+                        "desc": "Тестовый товар",
+                        "paymentType": "wm",
+                        "forcePay": true
+                    },
+                    "style": {
+                        "theme": "wm",
+                        "showAmount": true,
+                        "titleNum": 1,
+                        "title": "",
+                        "design": "skeuomorph"
+                    },
+                    "lang": "ru"
+                }
+            ).on(
+                'paymentComplete',
+                function (data) {
+                    /* your code */
+                }
+            ).mount('wm-widget')
+        </script>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
